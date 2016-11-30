@@ -1,0 +1,22 @@
+{
+  "name": "braille-tools",
+  "version": "1.0.0",
+  "copyright": "(c) 2016 Olivier Giulieri",
+  "license": "MIT", 
+  "homepage": "http://evoluteur.github.io/braille-tools/",
+  "author": {
+    "name": "Olivier Giulieri",
+    "url": "https://github.com/evoluteur"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evoluteur/braille-tools.git"
+  },
+  "keywords": [
+    "braille",
+    "alphabet",
+    "sprite",
+    "css"
+    "javascript"
+  ]
+}
