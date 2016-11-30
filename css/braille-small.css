@@ -1,0 +1,56 @@
+.alphabet>div>span{
+	text-align: right;
+	margin:0 5px 0 0;
+	min-width:30px !important;
+}
+.br{
+	display: inline-block;
+	background: #ffffff url('braille-small.png');
+	height:24px;
+	width:16px;
+	margin-right:3px;
+}
+.br.br-2_for{ background-position: 0 0;} 
+.br.br-a{ background-position: 0 -30px;} 
+.br.br-ast{ background-position: 0 -60px;} 
+.br.br-b{ background-position: 0 -90px;} 
+.br.br-c{ background-position: 0 -120px;} 
+.br.br-cap{ background-position: 0 -150px;} 
+.br.br-col{ background-position: 0 -180px;} 
+.br.br-comma{ background-position: 0 -210px;} 
+.br.br-d{ background-position: 0 -240px;} 
+.br.br-dec{ background-position: 0 -270px;} 
+.br.br-dot5{ background-position: 0 -300px;} 
+.br.br-e{ background-position: 0 -330px;} 
+.br.br-ex{ background-position: 0 -360px;} 
+.br.br-f{ background-position: 0 -390px;} 
+.br.br-g{ background-position: 0 -420px;} 
+.br.br-h{ background-position: 0 -450px;} 
+.br.br-hyph{ background-position: 0 -480px;} 
+.br.br-i{ background-position: 0 -510px;} 
+.br.br-j{ background-position: 0 -540px;} 
+.br.br-k{ background-position: 0 -570px;} 
+.br.br-l{ background-position: 0 -600px;} 
+.br.br-m{ background-position: 0 -630px;} 
+.br.br-n{ background-position: 0 -660px;} 
+.br.br-num{ background-position: 0 -690px;} 
+.br.br-o{ background-position: 0 -720px;} 
+.br.br-p{ background-position: 0 -750px;} 
+.br.br-par{ background-position: 0 -780px;} 
+.br.br-period{ background-position: 0 -810px;} 
+.br.br-q{ background-position: 0 -840px;} 
+.br.br-qc{ background-position: 0 -870px;} 
+.br.br-qs{ background-position: 0 -900px;} 
+.br.br-qu{ background-position: 0 -930px;} 
+.br.br-r{ background-position: 0 -960px;} 
+.br.br-s{ background-position: 0 -990px;} 
+.br.br-sc{ background-position: 0 -1020px;} 
+.br.br-sla{ background-position: 0 -1050px;} 
+.br.br-sp{ background-position: 0 -1080px;} 
+.br.br-t{ background-position: 0 -1110px;} 
+.br.br-u{ background-position: 0 -1140px;} 
+.br.br-v{ background-position: 0 -1170px;} 
+.br.br-w{ background-position: 0 -1200px;} 
+.br.br-x{ background-position: 0 -1230px;} 
+.br.br-y{ background-position: 0 -1260px;} 
+.br.br-z{ background-position: 0 -1290px;} 
