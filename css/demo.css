@@ -1,0 +1,140 @@
+
+body{
+    margin: 10px 20px 10px 210px;
+}
+body, input, select {
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    padding-top: 10px;
+    color: #0099cc;
+}
+
+.braille{
+    margin-top:20px;
+}
+.braille-doc span, .braille-doc2 span{
+    position: relative;
+    top:-8px;
+    margin: 0 5px 0 20px;
+    display:inline-block;
+    text-align: center;
+}
+.braille-doc >div{
+    display:inline-block;
+}
+.braille-doc2 >div{
+    display:inline-block;
+    text-align: left; 
+    margin-bottom: 10px;
+}
+.braille-doc2 span{
+    min-width:140px;
+    text-align: left; 
+}
+.mr50{
+    margin-right: 50px;
+}
+
+.leftBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    border: solid 1px silver;
+    padding: 0 20px;
+    /*
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    */
+}
+.leftBar>a{
+    display: block;
+    margin-bottom: 10px;
+}
+name{
+    display: block;
+    margin-top: 50px;
+}
+
+
+
+/* pieces of css from bootstrap */
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn {
+    margin-left: 1em;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.clearer{
+	clear: both;
+}
+pre {
+    display: block;
+    overflow: auto;
+    padding: 9.5px;
+    margin: 10px 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+pre > code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
