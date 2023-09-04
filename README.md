@@ -2,21 +2,26 @@
 
 CSS and Javascript to display Braille in web pages (for sighted people).
 
+Check out the [live demo](https://evoluteur.github.io/braille-tools/index.html).
+
 It comes in 3 different styles:
 
-![big](https://raw.github.com/evoluteur/braille-tools/gh-pages/screenshots/big.png)
+![big](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-big.png)
 
-![small](https://raw.github.com/evoluteur/braille-tools/gh-pages/screenshots/small.png)
+![small](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-small.png)
 
-![small-3d](https://raw.github.com/evoluteur/braille-tools/gh-pages/screenshots/small-3d.png)
+![small-3d](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-small-3d.png)
 
 
-Check out the [demo](https://evoluteur.github.io/braille-tools/index.html).
+### See your name in Braille
+
+![screenshot](https://raw.github.com/evoluteur/braille-tools/master/screenshots/your-name-in-braille.png)
+
 
 
 ### Braille Alphabet
 
-![screenshot](https://raw.github.com/evoluteur/braille-tools/gh-pages/screenshots/alphabet.gif)
+![screenshot](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-alphabet.png)
 
 
 ### License
