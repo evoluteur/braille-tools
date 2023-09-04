@@ -176,8 +176,6 @@ Notes: You will also need  to include the image with sprites of all Braille char
 
 <p>Notes: "br" is the grade 2 abbreviation of "Braille".</p>
 
-
-
 <name id="abc"/>
 <h2>ABC</h2>
 
@@ -207,9 +205,12 @@ Notes: You will also need  to include the image with sprites of all Braille char
 
 <div style="margin:20px 0 10px;">Javascript:</div>
 <pre>
-document.write(br.braille('Hello World'))
+document.write(br.braille("Hello World"))
 </pre>
-
+or using a "div" element of id "myBraille"
+<pre>
+document.getElementById("myBraille").innerHTML = br.braille("Hello World");
+</pre>
 
 <p>It can also be use with longer text:</p>
 <script language="javascript">
