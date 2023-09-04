@@ -1,9 +1,17 @@
-<html> 
+<html>
 <head>
 	<link id="css" href="css/braille-big.css" rel="stylesheet">
 	<link href="css/demo.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="br.gif">
     <title>Braille-Tools</title>
+    <meta
+      name="description"
+      content="CSS and Javascript to display Braille in web pages"
+    />
+    <meta
+      name="keywords"
+      content="braille grade 1 blind visually impaired css web ui"
+    />
 
 	<script src="braille-tools.js"></script>
 	<script language="javascript">
@@ -29,46 +37,58 @@
 
 	<h2>Braille-Tools</h2>
 
-	<h3>CSS</h3> 
+	<a href="#setup">Setup</a>
+
+	<h3>CSS</h3>
 	<a href="#cssclasses">CSS Classes</a>
 	<a href="#abc">ABC</a>
 
-	<h3>Javascript</h3> 
+	<h3>Javascript</h3>
 	<a href="#helloworld">Hello World</a>
 	<a href="#alphabet">Alphabet</a>
 	<a href="#braillename">Your Name in Braille</a>
 
-<br>
-	<h3><a href="https://github.com/evoluteur/braille-tools" target="_new">GitHub</a></h3>
+	<br>
+	<br>
+
+	<div id="github">
+		<iframe
+			src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=braille-tools&type=star&count=true&size=small"
+			frameborder="0"
+			scrolling="0"
+			width="100px"
+			height="30px"
+		></iframe>
+	</div>
 </div>
 
-
+<div class="content">
 <h1>CSS and Javascript to display Braille</h1>
 
- 
+
 <p>This library offers some CSS and Javascript to display Braille in web pages (for sighted people). </p>
 
 <p>With the <strong>CSS</strong> you can easily display Braille characters. With one CSS class name for every Braille character, you can display Grade 1 Braille.</p>
+
+<p>3 styles of Braille:
+	<a href="javascript:setCSS('big')">big</a> -
+	<a href="javascript:setCSS('small')">small</a> -
+	<a href="javascript:setCSS('small-3d')">small 3d</a>
+</p>
 
 <script language="javascript">
 document.write(br.braille('Braille is cool'))
 </script>
 
-<p>3 styles of Braille:
-	<a href="javascript:setCSS('big')">big</a> -  
-	<a href="javascript:setCSS('small')">small</a> -  
-	<a href="javascript:setCSS('small-3d')">small 3d</a>
-</p>
-
 <p><br/>Add the <strong>Javascript</strong> to make it dynamic.</p>
- 
-	<input id="txtBr" value="I am reading Braille" class="form-control pull-left" type="text" style="width:200px"> 
+
+	<input id="txtBr" value="I am reading Braille" class="form-control pull-left" type="text" style="width:200px">
 	<input id="btnBr" type="submit" value="Show Braille" maxlength="50" onclick="BrText()"
 		class="btn btn-primary pull-left">
 
 	<div style="height:20px;width:1px;"></div>
 	<div id="myBr" class="braille" style="margin-top:30px;min-height:70px;min-width:1px;"></div>
- 
+
 
 <script language="javascript">
 document.getElementById('txtBr').addEventListener("keyup", function(evt) {
@@ -76,11 +96,28 @@ document.getElementById('txtBr').addEventListener("keyup", function(evt) {
 		BrText();
 	}
 });
-</script> 
+</script>
 
 
 
 <p>The goal of this project is to introduce sighted people to the Braille system. It doesn't help with screen readers and is not intended for serious Braille transcription.</p>
+
+
+<name id="setup"/>
+<h2>Setup</h2>
+
+To include the library in your web pages, first, load CSS file (braille-big.css or braille-small.css).
+<pre>
+&lt;link href="css/braille-big.css" rel="stylesheet" type="text/css">
+</pre>
+
+
+You may not need to include the Javascript. If you do, use the following:
+<pre>
+&lt;script src="braille-tools.js" type="text/javascript" charset="utf-8"></script>
+</pre>
+
+
 
 <name id="cssclasses"/>
 <h2>Braille CSS Classes</h2>
@@ -140,22 +177,6 @@ document.getElementById('txtBr').addEventListener("keyup", function(evt) {
 <p>Notes: "br" is the grade 2 abbreviation of "Braille".</p>
 
 
-<name id="install"/>
-<h2>Installation</h2>
-
-First, load CSS file (braille-big.css or braille-small.css).
-<pre>
-&lt;link href="css/braille-big.css" rel="stylesheet" type="text/css">
-</pre>
-
-
-You may not need to include the Javascript. If you do, use the following:
-<pre>
-&lt;script src="braille-tools.js" type="text/javascript" charset="utf-8"></script>
-</pre>
-
-
-
 
 <name id="abc"/>
 <h2>ABC</h2>
@@ -168,7 +189,7 @@ You may not need to include the Javascript. If you do, use the following:
 
 <div style="margin:20px 0 10px;">HTML:</div>
 <pre>
-&lt;div class="br br-cap"></div>
+&lt;div class="br br-cap">&lt;/div>
 &lt;div class="br br-a">&lt;/div>
 &lt;div class="br br-b">&lt;/div>
 &lt;div class="br br-c">&lt;/div>
@@ -198,14 +219,14 @@ document.write(br.braille('Hello World'))
 			'magazines, compute mathematical equations, and even read and write music.';
 	document.write(br.braille(txt))
 </script>
- 
+
 <div style="margin:20px 0 10px;">Javascript:</div>
 <pre>
 var txt = 'Braille is a means of reading and writing for blind people. '+
 	'The Braille system was invented by Louis Braille. He has made it '+
 	'possible for blind people to take notes, write letters, read books and popular '+
 	'magazines, compute mathematical equations, and even read and write music.';
-		
+
 document.write(br.braille(txt))
 </pre>
 
@@ -227,8 +248,8 @@ document.write(br.alphabet())
 <name id="braillename"/>
 <div id="content_louis">
 	<h2>See your name in Braille</h2>
-	              
-	<input id="txtBraille" class="form-control pull-left" type="text" style="width:200px"> 
+
+	<input id="txtBraille" class="form-control pull-left" type="text" style="width:200px">
 	<input id="btnBraille" type="submit" value="Show Braille" maxlength="50" onclick="showBraille()"
 		class="btn btn-primary pull-left">
 
@@ -238,7 +259,7 @@ document.write(br.alphabet())
 <div style="margin:20px 0 10px;">HTML:</div>
 <pre>
 &lt;h2>See your name in Braille&lt;/h2>
-&lt;input id="txtBraille" type="text"> 
+&lt;input id="txtBraille" type="text">
 &lt;button id="btnBraille" type="submit" value="" onclick="showBraille()" >Show Braille&lt;/button>
 &lt;div id="myBraille" class="braille">&lt;/div>
 </pre>
@@ -264,8 +285,9 @@ document.getElementById('txtBraille').addEventListener("keyup", function(evt) {
 <div style="min-height: 100%;">
 	<h2>License</h2>
 	<p>This project is released under the <a href="http://github.com/evoluteur/braille-tools/blob/master/LICENSE.md">MIT license</a>.</p>
-	<p>Source code at <a href="https://github.com/evoluteur/braille-tools" target="_new">GitHub</a>.</p>
+	<p>Source code available at <a href="https://github.com/evoluteur/braille-tools" target="_new">GitHub</a>.</p>
 	<p>Copyright (c) 2016 Olivier Giulieri</p>
+</div>
 </div>
 
 </body>
