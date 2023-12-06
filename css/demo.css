@@ -54,21 +54,28 @@ h4 {
   height: 100%;
   border: solid 1px silver;
   padding: 0 10px;
-  background-color: #f5f5f5;
+  background: #0288d1 url(spirals.png);
   /*
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     */
   overflow-y: auto;
   max-height: 100%;
+  > h2 {
+    margin-top: 10px;
+    color: white;
+  }
+  > h3 {
+    color: white;
+  }
 }
 .leftBar > a {
   display: block;
-  margin: 5px 0 10px 10px;
-  color: black !important;
+  margin: 5px 0 10px 14px;
+  color: #faf3de !important;
   text-decoration: none;
-}
-.leftBar > a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* pieces of css from bootstrap */
