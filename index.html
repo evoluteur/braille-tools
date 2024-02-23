@@ -71,7 +71,7 @@
 
 <p>This library offers some CSS and Javascript to display Braille in web pages (for sighted people). </p>
 
-<p>With the <strong>CSS</strong> you can easily display Braille characters. With one CSS class name for every Braille character, you can display Grade 1 Braille.</p>
+<p>With the <strong>CSS</strong> you can easily display Braille characters.</p>
 
 <p>3 styles of Braille:
 	<a href="javascript:setCSS('big')">Big</a> -
@@ -90,7 +90,7 @@ document.write(br.braille('Braille is cool'))
 		class="btn">Show Braille</button>
 
 	<div style="height:20px;width:1px;"></div>
-	<div id="myBr" class="braille" style="margin-top:30px;min-height:70px;min-width:1px;"></div>
+	<div id="myBr" class="braille" style="min-height:70px;min-width:1px;"></div>
 
 
 <script language="javascript">
@@ -124,6 +124,8 @@ Notes: You will also need  to include the image with sprites of all Braille char
 
 <name id="cssclasses"/>
 <h2>Braille CSS Classes</h2>
+<p>With one CSS class name for every Braille character, you can display Grade 1 Braille.</p>
+
 <div class="braille-doc2">
 	<div><div class="br br-a"></div><span>br br-a</span></div>
 	<div><div class="br br-b"></div><span>br br-b</span></div>
@@ -255,7 +257,7 @@ document.write(br.alphabet())
 		class="btn">Show Braille</button>
 
 	<div style="height:20px;width:1px;"></div>
-	<div id="myBraille" class="braille" style="margin-top:30px;min-height:70px;min-width:1px;"></div>
+	<div id="myBraille" class="braille" style="min-height:70px;min-width:1px;"></div>
 
 <div style="margin:20px 0 10px;">HTML:</div>
 <pre>
