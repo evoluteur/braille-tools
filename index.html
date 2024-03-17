@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-063933E3C2');
-	</script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#bbdefb" />
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-063933E3C2");
+    </script>
+    <title>Braille Tools</title>
+    <link rel="canonical" href="https://evoluteur.github.io/braille-tools" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bbdefb" />
 
-	<link id="css" href="css/braille-big.css" rel="stylesheet">
-	<link href="css/demo.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="br.gif">
-    <title>Braille-Tools</title>
+    <link id="css" href="css/braille-big.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="br.gif" />
     <meta
       name="description"
       content="CSS and Javascript to display Braille in web pages (for sighted people)"
@@ -26,278 +32,459 @@
       content="braille, grade 1, blind, visually, impaired, css, web, ui"
     />
 
-	<script src="braille-tools.js"></script>
-	<script language="javascript">
-		const elem = (id) => document.getElementById(id);
-		function showBraille() {
-			var message = elem("txtBraille").value;
-			elem('myBraille').innerHTML = br.braille(message);
-		}
-		function BrText() {
-			var message = elem("txtBr").value;
-			elem('myBr').innerHTML = br.braille(message);
-		}
-		function setCSS(size) {
-			elem('css').href='css/braille-'+size+'.css';
-		}
-	</script>
-</head>
-<body>
+    <script src="braille-tools.js"></script>
+    <script language="javascript">
+      const elem = (id) => document.getElementById(id);
+      function showBraille() {
+        var message = elem("txtBraille").value;
+        elem("myBraille").innerHTML = br.braille(message);
+      }
+      function BrText() {
+        var message = elem("txtBr").value;
+        elem("myBr").innerHTML = br.braille(message);
+      }
+      function setCSS(size) {
+        elem("css").href = "css/braille-" + size + ".css";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="leftBar">
+      <h2>Braille-Tools</h2>
 
-<div class="leftBar">
+      <a href="#setup">Setup</a>
 
-	<h2>Braille-Tools</h2>
+      <h3>CSS</h3>
+      <a href="#cssclasses">CSS Classes</a>
+      <a href="#abc">ABC</a>
 
-	<a href="#setup">Setup</a>
+      <h3>Javascript</h3>
+      <a href="#helloworld">Hello World</a>
+      <a href="#alphabet">Alphabet</a>
+      <a href="#braillename">Your Name in Braille</a>
 
-	<h3>CSS</h3>
-	<a href="#cssclasses">CSS Classes</a>
-	<a href="#abc">ABC</a>
+      <br />
+      <br />
 
-	<h3>Javascript</h3>
-	<a href="#helloworld">Hello World</a>
-	<a href="#alphabet">Alphabet</a>
-	<a href="#braillename">Your Name in Braille</a>
+      <div id="github">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=braille-tools&type=star&count=true&size=small"
+          frameborder="0"
+          scrolling="0"
+          width="100px"
+          height="30px"
+        ></iframe>
+      </div>
+    </div>
 
-	<br>
-	<br>
+    <div class="content">
+      <h1>Braille-Tools</h1>
 
-	<div id="github">
-		<iframe
-			src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=braille-tools&type=star&count=true&size=small"
-			frameborder="0"
-			scrolling="0"
-			width="100px"
-			height="30px"
-		></iframe>
-	</div>
-</div>
+      <p>
+        This library offers some CSS and Javascript to display Braille in web
+        pages (for sighted people).
+      </p>
 
-<div class="content">
-<h1>Braille-Tools</h1>
+      <p>
+        With the <strong>CSS</strong> you can easily display Braille characters.
+      </p>
 
-<p>This library offers some CSS and Javascript to display Braille in web pages (for sighted people). </p>
+      <p>
+        3 styles of Braille: <a href="javascript:setCSS('big')">Big</a> -
+        <a href="javascript:setCSS('small')">Small</a> -
+        <a href="javascript:setCSS('small-3d')">Small 3D</a>
+      </p>
 
-<p>With the <strong>CSS</strong> you can easily display Braille characters.</p>
+      <script language="javascript">
+        document.write(br.braille("Braille is cool"));
+      </script>
 
-<p>3 styles of Braille:
-	<a href="javascript:setCSS('big')">Big</a> -
-	<a href="javascript:setCSS('small')">Small</a> -
-	<a href="javascript:setCSS('small-3d')">Small 3D</a>
-</p>
+      <p><br />Add the <strong>Javascript</strong> to make it dynamic.</p>
 
-<script language="javascript">
-document.write(br.braille('Braille is cool'))
-</script>
+      <input
+        id="txtBr"
+        value="I am reading Braille"
+        class="form-control"
+        type="text"
+        style="width: 200px"
+      />
+      <button type="submit" onclick="BrText()" class="btn">Show Braille</button>
 
-<p><br/>Add the <strong>Javascript</strong> to make it dynamic.</p>
+      <div style="height: 20px; width: 1px"></div>
+      <div
+        id="myBr"
+        class="braille"
+        style="min-height: 70px; min-width: 1px"
+      ></div>
 
-	<input id="txtBr" value="I am reading Braille" class="form-control" type="text" style="width:200px">
-	<button type="submit" onclick="BrText()"
-		class="btn">Show Braille</button>
+      <script language="javascript">
+        document
+          .getElementById("txtBr")
+          .addEventListener("keyup", function (evt) {
+            if (evt.keyCode === 13) {
+              BrText();
+            }
+          });
+      </script>
 
-	<div style="height:20px;width:1px;"></div>
-	<div id="myBr" class="braille" style="min-height:70px;min-width:1px;"></div>
+      <p>
+        The goal of this project is to introduce sighted people to the Braille
+        system. It doesn't help with screen readers and is not intended for
+        serious Braille transcription.
+      </p>
 
+      <name id="setup" />
+      <h2>Setup</h2>
 
-<script language="javascript">
-document.getElementById('txtBr').addEventListener("keyup", function(evt) {
-	if(evt.keyCode===13){
-		BrText();
-	}
-});
-</script>
-
-
-
-<p>The goal of this project is to introduce sighted people to the Braille system. It doesn't help with screen readers and is not intended for serious Braille transcription.</p>
-
-
-<name id="setup"/>
-<h2>Setup</h2>
-
-To include the library in your web pages, first, load the CSS file (based on the style you want use "braille-big.css",  "braille-small.css", or "braille-small-3d.css").
-<pre>
+      To include the library in your web pages, first, load the CSS file (based
+      on the style you want use "braille-big.css", "braille-small.css", or
+      "braille-small-3d.css").
+      <pre>
 &lt;link href="css/braille-big.css" rel="stylesheet" type="text/css">
-</pre>
+</pre
+      >
 
+      You may not need to include the Javascript. If you do, use the following:
+      <pre>
+&lt;script src="braille-tools.js" type="text/javascript" charset="utf-8">&lt;/script>
+</pre
+      >
 
-You may not need to include the Javascript. If you do, use the following:
-<pre>
-&lt;script src="braille-tools.js" type="text/javascript" charset="utf-8"></script>
-</pre>
+      Notes: You will also need to include the image with sprites of all Braille
+      characters in the same directory as the CSS file.
 
-Notes: You will also need  to include the image with sprites of all Braille characters in  the same directory as the CSS file.
+      <name id="cssclasses" />
+      <h2>Braille CSS Classes</h2>
+      <p>
+        With one CSS class name for every Braille character, you can display
+        Grade 1 Braille.
+      </p>
 
-<name id="cssclasses"/>
-<h2>Braille CSS Classes</h2>
-<p>With one CSS class name for every Braille character, you can display Grade 1 Braille.</p>
+      <div class="braille-doc2">
+        <div>
+          <div class="br br-a"></div>
+          <span>br br-a</span>
+        </div>
+        <div>
+          <div class="br br-b"></div>
+          <span>br br-b</span>
+        </div>
+        <div>
+          <div class="br br-c"></div>
+          <span>br br-c</span>
+        </div>
+        <div>
+          <div class="br br-d"></div>
+          <span>br br-d</span>
+        </div>
+        <div>
+          <div class="br br-e"></div>
+          <span>br br-e</span>
+        </div>
+        <div>
+          <div class="br br-f"></div>
+          <span>br br-f</span>
+        </div>
+        <div>
+          <div class="br br-g"></div>
+          <span>br br-g</span>
+        </div>
+        <div>
+          <div class="br br-h"></div>
+          <span>br br-h</span>
+        </div>
+        <div>
+          <div class="br br-i"></div>
+          <span>br br-i</span>
+        </div>
+        <div>
+          <div class="br br-j"></div>
+          <span>br br-j</span>
+        </div>
 
-<div class="braille-doc2">
-	<div><div class="br br-a"></div><span>br br-a</span></div>
-	<div><div class="br br-b"></div><span>br br-b</span></div>
-	<div><div class="br br-c"></div><span>br br-c</span></div>
-	<div><div class="br br-d"></div><span>br br-d</span></div>
-	<div><div class="br br-e"></div><span>br br-e</span></div>
-	<div><div class="br br-f"></div><span>br br-f</span></div>
-	<div><div class="br br-g"></div><span>br br-g</span></div>
-	<div><div class="br br-h"></div><span>br br-h</span></div>
-	<div><div class="br br-i"></div><span>br br-i</span></div>
-	<div><div class="br br-j"></div><span>br br-j</span></div>
+        <div>
+          <div class="br br-k"></div>
+          <span>br br-k</span>
+        </div>
+        <div>
+          <div class="br br-l"></div>
+          <span>br br-l</span>
+        </div>
+        <div>
+          <div class="br br-m"></div>
+          <span>br br-m</span>
+        </div>
+        <div>
+          <div class="br br-n"></div>
+          <span>br br-n</span>
+        </div>
+        <div>
+          <div class="br br-o"></div>
+          <span>br br-o</span>
+        </div>
+        <div>
+          <div class="br br-p"></div>
+          <span>br br-p</span>
+        </div>
+        <div>
+          <div class="br br-q"></div>
+          <span>br br-q</span>
+        </div>
+        <div>
+          <div class="br br-r"></div>
+          <span>br br-r</span>
+        </div>
+        <div>
+          <div class="br br-s"></div>
+          <span>br br-s</span>
+        </div>
+        <div>
+          <div class="br br-t"></div>
+          <span>br br-t</span>
+        </div>
 
-	<div><div class="br br-k"></div><span>br br-k</span></div>
-	<div><div class="br br-l"></div><span>br br-l</span></div>
-	<div><div class="br br-m"></div><span>br br-m</span></div>
-	<div><div class="br br-n"></div><span>br br-n</span></div>
-	<div><div class="br br-o"></div><span>br br-o</span></div>
-	<div><div class="br br-p"></div><span>br br-p</span></div>
-	<div><div class="br br-q"></div><span>br br-q</span></div>
-	<div><div class="br br-r"></div><span>br br-r</span></div>
-	<div><div class="br br-s"></div><span>br br-s</span></div>
-	<div><div class="br br-t"></div><span>br br-t</span></div>
+        <div>
+          <div class="br br-u"></div>
+          <span>br br-u</span>
+        </div>
+        <div>
+          <div class="br br-v"></div>
+          <span>br br-v</span>
+        </div>
+        <div>
+          <div class="br br-w"></div>
+          <span>br br-w</span>
+        </div>
+        <div>
+          <div class="br br-x"></div>
+          <span>br br-x</span>
+        </div>
+        <div>
+          <div class="br br-y"></div>
+          <span>br br-y</span>
+        </div>
+        <div>
+          <div class="br br-z"></div>
+          <span>br br-z</span>
+        </div>
 
-	<div><div class="br br-u"></div><span>br br-u</span></div>
-	<div><div class="br br-v"></div><span>br br-v</span></div>
-	<div><div class="br br-w"></div><span>br br-w</span></div>
-	<div><div class="br br-x"></div><span>br br-x</span></div>
-	<div><div class="br br-y"></div><span>br br-y</span></div>
-	<div><div class="br br-z"></div><span>br br-z</span></div>
+        <div>
+          <div class="br br-2_for"></div>
+          <span>br br-2_for</span>
+        </div>
+        <div>
+          <div class="br br-ast"></div>
+          <span>br br-ast</span>
+        </div>
+        <div>
+          <div class="br br-cap"></div>
+          <span>br br-cap</span>
+        </div>
+        <div>
+          <div class="br br-col"></div>
+          <span>br br-col</span>
+        </div>
+        <div>
+          <div class="br br-comma"></div>
+          <span>br br-comma</span>
+        </div>
+        <div>
+          <div class="br br-dec"></div>
+          <span>br br-dec</span>
+        </div>
+        <div>
+          <div class="br br-dot5"></div>
+          <span>br br-dot5</span>
+        </div>
+        <div>
+          <div class="br br-ex"></div>
+          <span>br br-ex</span>
+        </div>
+        <div>
+          <div class="br br-hyph"></div>
+          <span>br br-hyph</span>
+        </div>
+        <div>
+          <div class="br br-num"></div>
+          <span>br br-num</span>
+        </div>
+        <div>
+          <div class="br br-par"></div>
+          <span>br br-par</span>
+        </div>
+        <div>
+          <div class="br br-period"></div>
+          <span>br br-period</span>
+        </div>
+        <div>
+          <div class="br br-qc"></div>
+          <span>br br-qc</span>
+        </div>
+        <div>
+          <div class="br br-qs"></div>
+          <span>br br-qs</span>
+        </div>
+        <div>
+          <div class="br br-qu"></div>
+          <span>br br-qu</span>
+        </div>
+        <div>
+          <div class="br br-sc"></div>
+          <span>br br-sc</span>
+        </div>
+        <div>
+          <div class="br br-sla"></div>
+          <span>br br-sla</span>
+        </div>
+        <div>
+          <div class="br br-sp"></div>
+          <span>br br-sp</span>
+        </div>
+      </div>
 
-	<div><div class="br br-2_for"></div><span>br br-2_for</span></div>
-	<div><div class="br br-ast"></div><span>br br-ast</span></div>
-	<div><div class="br br-cap"></div><span>br br-cap</span></div>
-	<div><div class="br br-col"></div><span>br br-col</span></div>
-	<div><div class="br br-comma"></div><span>br br-comma</span></div>
-	<div><div class="br br-dec"></div><span>br br-dec</span></div>
-	<div><div class="br br-dot5"></div><span>br br-dot5</span></div>
-	<div><div class="br br-ex"></div><span>br br-ex</span></div>
-	<div><div class="br br-hyph"></div><span>br br-hyph</span></div>
-	<div><div class="br br-num"></div><span>br br-num</span></div>
-	<div><div class="br br-par"></div><span>br br-par</span></div>
-	<div><div class="br br-period"></div><span>br br-period</span></div>
-	<div><div class="br br-qc"></div><span>br br-qc</span></div>
-	<div><div class="br br-qs"></div><span>br br-qs</span></div>
-	<div><div class="br br-qu"></div><span>br br-qu</span></div>
-	<div><div class="br br-sc"></div><span>br br-sc</span></div>
-	<div><div class="br br-sla"></div><span>br br-sla</span></div>
-	<div><div class="br br-sp"></div><span>br br-sp</span></div>
-</div>
+      <p>Notes: "br" means "Braille" in Braille grade 2.</p>
 
-<p>Notes: "br" means "Braille" in Braille grade 2.</p>
+      <name id="abc" />
+      <h2>ABC</h2>
 
-<name id="abc"/>
-<h2>ABC</h2>
+      <p>Using the CSS classes in your HTML, you can display Braille.</p>
+      <div class="br br-cap"></div>
+      <div class="br br-a"></div>
+      <div class="br br-b"></div>
+      <div class="br br-c"></div>
 
-<p>Using the CSS classes in your HTML, you can display Braille.
-<div class="br br-cap"></div>
-<div class="br br-a"></div>
-<div class="br br-b"></div>
-<div class="br br-c"></div>
-
-<div style="margin:20px 0 10px;">HTML:</div>
-<pre>
+      <div style="margin: 20px 0 10px">HTML:</div>
+      <pre>
 &lt;div class="br br-cap">&lt;/div>
 &lt;div class="br br-a">&lt;/div>
 &lt;div class="br br-b">&lt;/div>
 &lt;div class="br br-c">&lt;/div>
-</pre>
+</pre
+      >
 
+      <name id="helloworld" />
+      <h2>Hello World</h2>
 
+      <script language="javascript">
+        document.write(br.braille("Hello World"));
+      </script>
 
-
-<name id="helloworld"/>
-<h2>Hello World</h2>
-
-<script language="javascript">
-	document.write(br.braille('Hello World'))
-</script>
-
-<div style="margin:20px 0 10px;">Javascript:</div>
-<pre>
+      <div style="margin: 20px 0 10px">Javascript:</div>
+      <pre>
 document.write(br.braille("Hello World"))
-</pre>
-or using a "div" element of id "myBraille"
-<pre>
+</pre
+      >
+      or using a "div" element of id "myBraille"
+      <pre>
 document.getElementById("myBraille").innerHTML = br.braille("Hello World");
-</pre>
+</pre
+      >
 
-<p>It can also be used with longer text:</p>
-<script language="javascript">
-	var txt='Braille is a means of reading and writing for blind people. '+
-			'The Braille system was invented by Louis Braille. He has made it '+
-			'possible for blind people to take notes, write letters, read books and popular '+
-			'magazines, compute mathematical equations, and even read and write music.';
-	document.write(br.braille(txt))
-</script>
+      <p>It can also be used with longer text:</p>
+      <script language="javascript">
+        var txt =
+          "Braille is a means of reading and writing for blind people. " +
+          "The Braille system was invented by Louis Braille. He has made it " +
+          "possible for blind people to take notes, write letters, read books and popular " +
+          "magazines, compute mathematical equations, and even read and write music.";
+        document.write(br.braille(txt));
+      </script>
 
-<div style="margin:20px 0 10px;">Javascript:</div>
-<pre>
+      <div style="margin: 20px 0 10px">Javascript:</div>
+      <pre>
 var txt = 'Braille is a means of reading and writing for blind people. '+
 	'The Braille system was invented by Louis Braille. He has made it '+
 	'possible for blind people to take notes, write letters, read books and popular '+
 	'magazines, compute mathematical equations, and even read and write music.';
 
 document.write(br.braille(txt))
-</pre>
+</pre
+      >
 
+      <name id="alphabet" />
+      <h2>Alphabet</h2>
 
+      <script language="javascript">
+        document.write(br.alphabet());
+      </script>
 
-<name id="alphabet"/>
-<h2>Alphabet</h2>
-
-<script language="javascript">
-	document.write(br.alphabet())
-</script>
-
-<div style="margin:20px 0 10px;">Javascript:</div>
-<pre>
+      <div style="margin: 20px 0 10px">Javascript:</div>
+      <pre>
 document.write(br.alphabet())
-</pre>
+</pre
+      >
 
+      <name id="braillename" />
+      <div id="content_louis">
+        <h2>See your name in Braille</h2>
 
-<name id="braillename"/>
-<div id="content_louis">
-	<h2>See your name in Braille</h2>
+        <input
+          id="txtBraille"
+          class="form-control"
+          type="text"
+          style="width: 200px"
+        />
+        <button type="submit" onclick="showBraille()" class="btn">
+          Show Braille
+        </button>
 
-	<input id="txtBraille" class="form-control" type="text" style="width:200px">
-	<button type="submit" onclick="showBraille()"
-		class="btn">Show Braille</button>
+        <div style="height: 20px; width: 1px"></div>
+        <div
+          id="myBraille"
+          class="braille"
+          style="min-height: 70px; min-width: 1px"
+        ></div>
 
-	<div style="height:20px;width:1px;"></div>
-	<div id="myBraille" class="braille" style="min-height:70px;min-width:1px;"></div>
-
-<div style="margin:20px 0 10px;">HTML:</div>
-<pre>
+        <div style="margin: 20px 0 10px">HTML:</div>
+        <pre>
 &lt;h2>See your name in Braille&lt;/h2>
 &lt;input id="txtBraille" type="text">
 &lt;button type="submit" onclick="showBraille()">Show Braille&lt;/button>
 &lt;div id="myBraille" class="braille">&lt;/div>
-</pre>
+</pre
+        >
 
-<div style="margin:20px 0 10px;">Javascript:</div>
-<pre>
+        <div style="margin: 20px 0 10px">Javascript:</div>
+        <pre>
 function showBraille() {
   var message = document.getElementById("txtBraille").value;
   document.getElementById('myBraille').innerHTML = br.braille(message);
 }
-</pre>
+</pre
+        >
 
-<script language="javascript">
-document.getElementById('txtBraille').addEventListener("keyup", function(evt) {
-	if(evt.keyCode===13){
-		showBraille();
-	}
-});
-</script>
-</div>
+        <script language="javascript">
+          document
+            .getElementById("txtBraille")
+            .addEventListener("keyup", function (evt) {
+              if (evt.keyCode === 13) {
+                showBraille();
+              }
+            });
+        </script>
+      </div>
 
-<name id="License"/>
-<div style="min-height: 100%;">
-	<h2>License</h2>
-	<p>The source code is available at <a href="https://github.com/evoluteur/braille-tools" target="gh">GitHub</a> under the <a href="http://github.com/evoluteur/braille-tools/blob/master/LICENSE.md">MIT license</a>.
-	<p>Copyright (c) 2016-2024  <a href="https://evoluteur.github.io/" target="og">Olivier Giulieri</a></p>
-</div>
-</div>
-
-</body>
+      <name id="License" />
+      <div style="min-height: 100%">
+        <h2>License</h2>
+        <p>
+          The source code is available at
+          <a href="https://github.com/evoluteur/braille-tools" target="gh"
+            >GitHub</a
+          >
+          under the
+          <a
+            href="http://github.com/evoluteur/braille-tools/blob/master/LICENSE.md"
+            >MIT license</a
+          >.
+        </p>
+        <p>
+          Copyright (c) 2016-2024
+          <a href="https://evoluteur.github.io/" target="og"
+            >Olivier Giulieri</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
