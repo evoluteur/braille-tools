@@ -92,14 +92,18 @@
       </p>
 
       <p>
-        3 styles of Braille: <a href="javascript:setCSS('big')">Big</a> -
-        <a href="javascript:setCSS('small')">Small</a> -
-        <a href="javascript:setCSS('small-3d')">Small 3D</a>
+        3 styles of Braille:
+        <button onclick="javascript:setCSS('big')">Big</button> -
+        <button onclick="javascript:setCSS('small')">Small</button> -
+        <button onclick="javascript:setCSS('small-3d')">Small 3D</button>
       </p>
 
-      <script language="javascript">
-        document.write(br.braille("Braille is cool"));
-      </script>
+      <div>
+        <br />
+        <script language="javascript">
+          document.write(br.braille("Braille is cool"));
+        </script>
+      </div>
 
       <p><br />Add the <strong>Javascript</strong> to make it dynamic.</p>
 
