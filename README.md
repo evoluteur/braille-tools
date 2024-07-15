@@ -23,6 +23,7 @@ It comes in 3 different styles:
 
 ![screenshot](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-alphabet.png)
 
+For displaying the character on hover (with animation), use my other script [Braille-Text](https://github.com/evoluteur/braille-text).
 
 ### License
 
