@@ -143,3 +143,32 @@ pre {
     display: none;
   }
 }
+
+.heart {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+  transition: color 1s;
+  color: #bf360c;
+  -webkit-animation: beat 0.35s infinite alternate;
+  -moz-animation: beat 0.35s infinite alternate;
+  -ms-animation: beat 0.35s infinite alternate;
+  -o-animation: beat 0.35s infinite alternate;
+  animation: beat 0.35s infinite alternate;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}

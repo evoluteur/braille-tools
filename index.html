@@ -34,11 +34,11 @@
     <script language="javascript">
       const elem = (id) => document.getElementById(id);
       function showBraille() {
-        var message = elem("txtBraille").value;
+        const message = elem("txtBraille").value;
         elem("myBraille").innerHTML = br.braille(message);
       }
       function BrText() {
-        var message = elem("txtBr").value;
+        const message = elem("txtBr").value;
         elem("myBr").innerHTML = br.braille(message);
       }
       function setCSS(size) {
@@ -392,7 +392,7 @@ document.getElementById("myBraille").innerHTML = br.braille("Hello World");
 
       <p>It can also be used with longer text:</p>
       <script language="javascript">
-        var txt =
+        const txt =
           "Braille is a means of reading and writing for blind people. " +
           "The Braille system was invented by Louis Braille. He has made it " +
           "possible for blind people to take notes, write letters, read books and popular " +
@@ -402,10 +402,10 @@ document.getElementById("myBraille").innerHTML = br.braille("Hello World");
 
       <div style="margin: 20px 0 10px">Javascript:</div>
       <pre>
-var txt = 'Braille is a means of reading and writing for blind people. '+
-	'The Braille system was invented by Louis Braille. He has made it '+
-	'possible for blind people to take notes, write letters, read books and popular '+
-	'magazines, compute mathematical equations, and even read and write music.';
+const txt = 'Braille is a means of reading and writing for blind people. '+
+  'The Braille system was invented by Louis Braille. He has made it '+
+  'possible for blind people to take notes, write letters, read books and popular '+
+  'magazines, compute mathematical equations, and even read and write music.';
 
 document.write(br.braille(txt))
 </pre
@@ -429,7 +429,7 @@ document.write(br.alphabet())
         3.
       </p>
       <name id="braillename" />
-      <div id="content_louis">
+      <div>
         <h2>See your name in Braille</h2>
 
         <input
@@ -461,7 +461,7 @@ document.write(br.alphabet())
         <div style="margin: 20px 0 10px">Javascript:</div>
         <pre>
 function showBraille() {
-  var message = document.getElementById("txtBraille").value;
+  const message = document.getElementById("txtBraille").value;
   document.getElementById('myBraille').innerHTML = br.braille(message);
 }
 </pre
@@ -500,12 +500,17 @@ function showBraille() {
             >MIT license</a
           >.
         </p>
+        <div>
+          Made in California with
+          <div class="heart">♥</div>
+        </div>
         <p>
           Copyright (c) 2016-2024
           <a href="https://evoluteur.github.io/" target="og"
             >Olivier Giulieri</a
           >
         </p>
+        <p><br /></p>
       </div>
     </div>
   </body>
