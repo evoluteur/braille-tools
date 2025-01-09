@@ -30,4 +30,4 @@ Braille-Tools is released under the [MIT license](http://github.com/evoluteur/br
 
 Encourage this project by [becoming a sponsor](https://github.com/sponsors/evoluteur).
 
-(c) 2016-2024 [Olivier Giulieri](https://evoluteur.github.io/)
+(c) 2016-2025 [Olivier Giulieri](https://evoluteur.github.io/)
