@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <script
@@ -13,7 +13,9 @@
       gtag("js", new Date());
       gtag("config", "G-063933E3C2");
     </script>
-    <title>Braille Tools: CSS + JS</title>
+    <title>
+      Braille-Tools: Display English Grade 1 Braille with CSS &amp; JavaScript
+    </title>
     <link rel="canonical" href="https://evoluteur.github.io/braille-tools/" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,12 +26,65 @@
     <link rel="icon" type="image/png" href="br.gif" />
     <meta
       name="description"
-      content="A lightweight JavaScript and CSS solution for adding English Grade 1 Braille to websites, designed to help sighted readers view and learn how Braille is written."
+      content="Lightweight CSS &amp; JavaScript library for displaying English Grade 1 Braille in web pages. Explore the alphabet, see your name in Braille, and embed it on any website."
     />
     <meta
       name="keywords"
-      content="braille, grade 1, blind, visually, impaired, css, web, ui, sprite"
+      content="braille, grade 1, english braille, blind, visually impaired, braille alphabet, braille css, braille javascript, learn braille, braille library"
     />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Braille-Tools" />
+    <meta
+      property="og:url"
+      content="https://evoluteur.github.io/braille-tools/"
+    />
+    <meta
+      property="og:title"
+      content="Braille-Tools: Display English Grade 1 Braille with CSS &amp; JavaScript"
+    />
+    <meta
+      property="og:description"
+      content="Lightweight CSS &amp; JavaScript library for displaying English Grade 1 Braille in web pages. Explore the alphabet, see your name in Braille, and embed it on any website."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/evoluteur/braille-tools/master/screenshots/your-name-in-braille.png"
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Braille-Tools: Display English Grade 1 Braille with CSS &amp; JavaScript"
+    />
+    <meta
+      name="twitter:description"
+      content="Lightweight CSS &amp; JavaScript library for displaying English Grade 1 Braille in web pages. Explore the alphabet, see your name in Braille, and embed it on any website."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/evoluteur/braille-tools/master/screenshots/your-name-in-braille.png"
+    />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Braille-Tools",
+        "description": "Lightweight CSS & JavaScript library for displaying English Grade 1 Braille in web pages.",
+        "url": "https://evoluteur.github.io/braille-tools/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "license": "https://github.com/evoluteur/braille-tools/blob/master/LICENSE.md",
+        "codeRepository": "https://github.com/evoluteur/braille-tools",
+        "author": {
+          "@type": "Person",
+          "name": "Olivier Giulieri",
+          "url": "https://evoluteur.github.io/"
+        }
+      }
+    </script>
     <script src="braille-tools.js"></script>
     <script language="javascript">
       const elem = (id) => document.getElementById(id);
@@ -45,10 +100,6 @@
         elem("css").href = "css/braille-" + size + ".css";
       }
     </script>
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/evoluteur/braille-tools/master/screenshots/your-name-in-braille.png"
-    />
   </head>
   <body>
     <div class="leftBar">
@@ -60,7 +111,7 @@
       <a href="#cssclasses">CSS Classes</a>
       <a href="#abc">ABC</a>
 
-      <h3>Javascript</h3>
+      <h3>JavaScript</h3>
       <a href="#helloworld">Hello World</a>
       <a href="#alphabet">Alphabet</a>
       <a href="#braillename">Your Name in Braille</a>
@@ -83,19 +134,21 @@
       <h1>Braille-Tools</h1>
 
       <p>
-        This library offers some CSS and Javascript to display English Braille
-        Grade 1 in web pages (for sighted people).
+        A lightweight CSS and JavaScript library for displaying English Grade 1
+        Braille in web pages — designed to introduce sighted people to the
+        Braille system.
       </p>
 
       <p>
-        With the <strong>CSS</strong> you can easily display Braille characters.
+        Use <strong>CSS</strong> to render Braille characters in three visual
+        styles:
       </p>
 
       <p>
         3 styles of Braille:
-        <button onclick="javascript:setCSS('big')">Big</button> -
-        <button onclick="javascript:setCSS('small')">Small</button> -
-        <button onclick="javascript:setCSS('small-3d')">Small 3D</button>
+        <button onclick="javascript: setCSS('big');">Big</button> -
+        <button onclick="javascript: setCSS('small');">Small</button> -
+        <button onclick="javascript: setCSS('small-3d');">Small 3D</button>
       </p>
 
       <div>
@@ -105,7 +158,7 @@
         </script>
       </div>
 
-      <p><br />Add the <strong>Javascript</strong> to make it dynamic.</p>
+      <p><br />Add <strong>JavaScript</strong> to make it interactive:</p>
 
       <input
         id="txtBr"
@@ -134,30 +187,30 @@
       </script>
 
       <p>
-        The goal of this project is to introduce sighted people to the Braille
-        system. It doesn't help with screen readers and is not intended for
-        serious Braille transcription.
+        Note: this library is intended to help sighted people explore the
+        Braille system. It does not assist screen readers and is not a tool for
+        professional Braille transcription.
       </p>
 
       <name id="setup" />
       <h2>Setup</h2>
 
-      To include the library in your web pages, first, load the CSS file (based
-      on the style you want use "braille-big.css", "braille-small.css", or
-      "braille-small-3d.css").
+      To include the library, load one of the three CSS files depending on the
+      style you want — "braille-big.css", "braille-small.css", or
+      "braille-small-3d.css":
       <pre>
 &lt;link href="css/braille-big.css" rel="stylesheet" type="text/css">
 </pre
       >
 
-      You may not need to include the Javascript. If you do, use the following:
+      The JavaScript file is only needed for dynamic rendering:
       <pre>
 &lt;script src="braille-tools.js" type="text/javascript" charset="utf-8">&lt;/script>
 </pre
       >
 
-      Notes: You will also need to include the image with sprites of all Braille
-      characters in the same directory as the CSS file.
+      Note: the CSS file relies on a sprite image containing all Braille
+      characters, which must be in the same directory as the CSS file.
 
       <name id="cssclasses" />
       <h2>Braille CSS Classes</h2>
@@ -353,7 +406,7 @@
       <name id="abc" />
       <h2>ABC</h2>
 
-      <p>Using the CSS classes in your HTML, you can display Braille.</p>
+      <p>Use CSS class names directly in your HTML to display Braille characters.</p>
       <div class="br br-cap"></div>
       <div class="br br-a"></div>
       <div class="br br-b"></div>
@@ -372,8 +425,7 @@
       <h2>Hello World</h2>
 
       <p>
-        Rather than using HTML, you can use Javascript to generate the HTML
-        dynamically.
+        You can also use JavaScript to generate the Braille HTML dynamically.
       </p>
       <script language="javascript">
         document.write(br.braille("Hello World"));
@@ -384,7 +436,7 @@
 document.write(br.braille("Hello World"))
 </pre
       >
-      or using a "div" element of id "myBraille"
+      Or using a <code>div</code> element with id "myBraille":
       <pre>
 document.getElementById("myBraille").innerHTML = br.braille("Hello World");
 </pre
@@ -425,7 +477,7 @@ document.write(br.alphabet())
       >
       <p>
         <br />
-        Notes: Letters "k" to "t" are the same as "a" to "j" with the added dot
+        Note: letters "k" to "t" are the same as "a" to "j" with an added dot
         3.
       </p>
       <name id="braillename" />
@@ -509,7 +561,7 @@ function showBraille() {
         </p>
 
         <p>
-          (c) 2016-2025
+          (c) 2016-2026
           <a href="https://evoluteur.github.io/" target="og"
             >Olivier Giulieri</a
           >

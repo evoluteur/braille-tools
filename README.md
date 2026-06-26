@@ -1,10 +1,10 @@
 # Braille-Tools
 
-CSS and Javascript to display Braille (grade 1) in web pages (for sighted people).
+A lightweight CSS and JavaScript library for displaying English Grade 1 Braille in web pages — designed to introduce sighted people to the Braille system.
 
 Check out the [live demo](https://evoluteur.github.io/braille-tools/index.html).
 
-It comes in 3 different styles:
+It comes in 3 visual styles:
 
 ![big](screenshots/braille-big.png)
 
@@ -22,7 +22,9 @@ It comes in 3 different styles:
 
 ![screenshot](https://raw.github.com/evoluteur/braille-tools/master/screenshots/braille-alphabet.png)
 
-For displaying the character on hover (with animation), use my other script [Braille-Text](https://github.com/evoluteur/braille-text).
+For displaying characters on hover (with animation), see [Braille-Text](https://github.com/evoluteur/braille-text).
+
+Note: this library is intended to help sighted people explore the Braille system. It does not assist screen readers and is not a tool for professional Braille transcription.
 
 ### License
 
@@ -30,4 +32,4 @@ Braille-Tools is released under the [MIT license](http://github.com/evoluteur/br
 
 Encourage this project by [becoming a sponsor](https://github.com/sponsors/evoluteur).
 
-(c) 2016-2025 [Olivier Giulieri](https://evoluteur.github.io/)
+(c) 2016-2026 [Olivier Giulieri](https://evoluteur.github.io/)
