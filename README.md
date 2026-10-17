@@ -24,12 +24,14 @@ It comes in 3 visual styles:
 
 For displaying characters on hover (with animation), see [Braille-Text](https://github.com/evoluteur/braille-text).
 
+To learn to read Braille, play [Braille Quiz](https://evoluteur.github.io/braille-quiz/) ([code](https://github.com/evoluteur/braille-quiz)).
+
 Note: this library is intended to help sighted people explore the Braille system. It does not assist screen readers and is not a tool for professional Braille transcription.
 
 ### License
 
 Braille-Tools is released under the [MIT license](http://github.com/evoluteur/braille/blob/master/LICENSE.md).
 
-Encourage this project by [becoming a sponsor](https://github.com/sponsors/evoluteur).
+Had fun browsing the app? [Buy me a coffee by becoming a sponsor](https://github.com/sponsors/evoluteur).
 
 (c) 2016-2026 [Olivier Giulieri](https://evoluteur.github.io/)
