@@ -80,8 +80,8 @@ This library is intended to help sighted people explore the Braille system. It d
 
 ## Related projects
 
-- [Braille-Text](https://github.com/evoluteur/braille-text): displays the print characters when hovering over the Braille (with animation).
 - [Braille Quiz](https://evoluteur.github.io/braille-quiz/) ([code](https://github.com/evoluteur/braille-quiz)): learn to read Braille.
+- [Braille-Text](https://evoluteur.github.io/braille-text/) ([code](https://github.com/evoluteur/braille-text)): displays the print characters when hovering over the Braille (with animation).
 
 ## License
 
